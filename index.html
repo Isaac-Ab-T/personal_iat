@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal page of Isaac Abraham" />
+    <title>Isaac Abraham T</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/3f6c02cb8b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header1">
+      <div class="container">
+        <nav>
+          <img src="../images/logo3.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#" onclick="closemenu()"> Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
+            <li><a href="#projects" onclick="closemenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fa-solid fa-x" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>CS Enthusiast</p>
+          <h1>Isaac Abraham <span>T</span></h1>
+        </div>
+      </div>
+      <!--background-->
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="../images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Keen on learning things that keep me late up in the night!</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('tab1')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('tab2')">Certificates</p>
+              <p class="tab-links" onclick="opentab('tab3')">Papers</p>
+            </div>
+            <div class="tab-contents active-tab" id="tab1">
+              <!-- <ul>
+                            <li><span>$1 Piano With Image Recognition</span><br>Creating a Desktop Application to 
+                                play piano by hovering your hand before the camera.</li>
+                            <li><span>ROS with SLAM</span><br>Learning to integrate SLAM into a rover for navigation purposes</li>
+                            <li><span>Integration of ChatGPT with a Website</span><br>Using ReactJS and NodeJS server
+                            to train OPENAI Curie Model such that it replies to specific text related to a company</li>
+                        </ul> -->
+              <ul>
+                <li>
+                  <span
+                    ><span>B.E. CSE 2021-2025</span><br />
+                    CGPA : 9.63 (Second Semester)</span
+                  >
+                  <br />
+                  PSG Institute of Technology and Applied Research
+                </li>
+                <li>
+                  <span><span>AISSCE CBSE</span><br />95.6%</span><br />The NGP
+                  School
+                </li>
+                <li>
+                  <span><span>SSLC CBSE</span><br />95.6%</span><br />The NGP
+                  School
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="tab2">
+              <ul>
+                <li>
+                  <span
+                    ><span>2nd place<br /></span>International Rover Design
+                    Challenge</span
+                  ><br />Team Aurora May 2023
+                </li>
+                <li>
+                  <span
+                    ><span>1st place<br /> </span>Anna University Regional
+                    Campus</span
+                  ><br />Code Debugging in Genio 2k22
+                </li>
+                <li>
+                  <span
+                    ><span>Best Delegate<br /></span>IIMUN 2019</span
+                  ><br />G20 Presidency
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="tab3">
+              <ul>
+                <li>
+                  <span style="font-size: 17px"
+                    ><a
+                      style="text-decoration: none"
+                      href="https://irojournals.com/jucct/article/pdf/5/1/1"
+                      target="_blank"
+                      ><span style="font-size: 20px"
+                        >Virtual Musical Instruments with Python and
+                        OpenCV</span
+                      ></a
+                    ><br />Scopus Indexed-February 2023</span
+                  ><br />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="projects">
+        <div class="containers">
+          <h1 class="sub-title">My Projects</h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Online Test Proctoring Application</h2>
+              <button class="holder holder4">Python</button>
+              <button class="holder holder4">MySQL</button>
+              <p>
+                A Python Tkinter GUI, where teachers can create tests, evaluate
+                them and run these tests on specific dates. Students can attend
+                the exam, through the same app,check their grades in previous
+                tests. All of these data are stored on a live MySQL Server.
+              </p>
+              <a href="https://github.com/Isaac-Ab-T/miniproject_testcam"
+                >Learn More</a
+              >
+            </div>
+            <div>
+              <i class="fa-solid fa-network-wired"></i>
+              <h2>2-Player Tic-Tac-Toe Game over a LAN</h2>
+              <button class="holder holder4">Java</button>
+              <button class="holder holder4">Socket Programming</button>
+              <p>
+                With help of Java FX and Socket Programming, created a
+                Multithreaded Server,that listens from multiple clients and
+                sends data to individual clients. Merged it with JavaFX GUI to
+                create a Tic Tac Toe game, where 2 players play over a LAN.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-regular fa-brain-circuit"></i>
+              <h2>Integration of ChatGPT as Personal Assitant</h2>
+              <button class="holder holder4">ReactJS</button>
+              <button class="holder holder4">NodeJS</button>
+              <button class="holder holder4">API</button>
+              <p>
+                Trained the ChatGPT model, to answer to prompts that are
+                specific to the HDFC bank. Used a Node server to maintain
+                conversational memory and used a React frontend to receive text
+                as well as speech prompts.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-satellite-dish"></i>
+              <h2>Integration of SLAM with ROS</h2>
+              <button class="holder holder4">Ubuntu</button>
+              <button class="holder holder4">ROS</button>
+              <button class="holder holder4">SLAM</button>
+              <p>
+                Part of the Computer Science Dept of Team Aurora, a Martian
+                Rover team of PSG ITech. Uses ROS to transmit images from rover
+                to base station, achieving SLAM using Rp LIDAR Point Cloud Data.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-piggy-bank"></i>
+              <h2>Expense Application</h2>
+              <button class="holder holder4">Java</button>
+              <button class="holder holder4">Android</button>
+              <p>
+                Stores expenses based on the type of expenses,with extra details
+                and cost of each item in local csv file. Retrieves previous
+                expenses by month, type and sum of expenses in each type,
+                helping user track their expenses.
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>blaisepascale1662@gmail.com
+            </p>
+            <div class="social-icons">
+              <a href="https://github.com/Isaac-Ab-T" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@isaacabraham5761"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+            <!-- <a href="../images/resume1.pdf" download class="btn">Download CV</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <h4>Isaac Abraham T</h4>
+      <ul>
+        <li><a target="_blank" href="https://github.com/Isaac-Ab-T"><img src="images/github_1.png" /></li>
+        <li><a target="_blank" href="https://www.youtube.com/@isaacabraham5761"><img src="images/yt_1.png" /></li>
+      </ul>
+    </footer> -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
